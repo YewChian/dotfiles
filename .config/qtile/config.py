@@ -178,6 +178,18 @@ keys = [
         "XF86AudioMute",
         lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"),
     ),
+    Key(
+        [],
+        "XF86MonBrightnessUp",
+        lazy.spawn("brightnessctl set +10%"),
+    ),
+    Key(
+        [],
+        "XF86MonBrightnessDown",
+        lazy.spawn("brightnessctl set 10-%"),
+    ),
+    # Flameshot
+    Key([], "Print", lazy.spawn("flameshot gui")),
 ]
 
 
