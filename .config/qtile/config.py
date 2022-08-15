@@ -456,7 +456,7 @@ bar_defaults = dict(
 
 def create_main_screen():
     return Screen(
-        wallpaper="~/dotfiles/wallpapers/wallpaper.png",
+        wallpaper="~/dotfiles/wallpapers/wallpaper_hk.jpeg",
         wallpaper_mode="fill",
         top=bar.Bar(create_widget_list(), **bar_defaults),
     )
